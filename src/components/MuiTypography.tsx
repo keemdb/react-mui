@@ -1,3 +1,6 @@
+// component : 속성 사용시 해당 태그로 적용 가능
+// gutterBottom : margin-bottom 적용
+
 import { Typography } from "@mui/material"
 
 export const MuiTypography = () => {
@@ -7,7 +10,6 @@ export const MuiTypography = () => {
 		<Typography variant="h2">h2 Heading</Typography>
 		<Typography variant="h3">h3 Heading</Typography>
 
-		{/* component 속성 사용시 해당 태그로 적용할수 있음 */}
 		<Typography variant="h4" component="h1" gutterBottom>h4 Heading</Typography>
 
 		<Typography variant="h5">h5 Heading</Typography>
