@@ -86,6 +86,8 @@ export const MuiButton = () => {
 
     </Stack>
 
+	<Button variant="contained" color="error">delete</Button>
+
   </Stack>
 
  )
