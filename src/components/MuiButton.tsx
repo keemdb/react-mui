@@ -1,6 +1,9 @@
-import { Stack, Button, IconButton, ButtonGroup } from "@mui/material"
+import { Stack, Button, IconButton, ButtonGroup, ToggleButtonGroup, ToggleButton } from "@mui/material"
 
 import SendIcon from "@mui/icons-material/Send"
+import FormatBoldIcon from "@mui/icons-material/FormatBold"
+import FormatItalicIcon from "@mui/icons-material/FormatItalic"
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined"
 
   
 
@@ -85,8 +88,14 @@ export const MuiButton = () => {
       </ButtonGroup>
 
     </Stack>
-
-	<Button variant="contained" color="error">delete</Button>
+    
+    <Stack direction='row'>
+      <ToggleButtonGroup aria-label="text formatting">
+        <ToggleButton value="bold"><FormatBoldIcon/></ToggleButton>
+        <ToggleButton value="italic"><FormatItalicIcon/></ToggleButton>
+        <ToggleButton value="underline"><FormatUnderlinedIcon/></ToggleButton>
+      </ToggleButtonGroup>
+    </Stack>
 
   </Stack>
 
